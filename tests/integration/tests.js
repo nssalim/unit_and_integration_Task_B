@@ -184,7 +184,7 @@ xit('should return error message when dividing by zero', function () {
   element(by.css('#operator_divide')).click();
   element(by.css('#number0')).click();
   element(by.css('#operator_equals')).click();
-  expect(running_total.getAttribute('value')).to.eventually.equal('Error, number cannotbe divided by 0');
+  expect(running_total.getAttribute('value')).to.eventually.equal('Error, number cannot be divided by 0');
 });
 
 //Division by zero should update with null. 
@@ -194,7 +194,7 @@ it('should return null when dividing by zero', function () {
   element(by.css('#operator_divide')).click();
   element(by.css('#number0')).click();
   element(by.css('#operator_equals')).click();
-  expect(running_total.getAttribute(Infinity)).to.eventually.equal(null,'Error, number cannotbe divided by 0');
+  expect(running_total.getAttribute(Infinity)).to.eventually.equal(null,'Error, number cannot be divided by 0');
 });
 
 //Division by zero should update with infinity. 
@@ -204,7 +204,7 @@ it('should return infinity when dividing by zero', function () {
   element(by.css('#operator_divide')).click();
   element(by.css('#number0')).click();
   element(by.css('#operator_equals')).click();
-  expect(running_total.getAttribute('value')).to.eventually.equal('Infinity','Error, number cannotbe divided by 0');
+  expect(running_total.getAttribute('value')).to.eventually.equal('Infinity','Error, number cannot be divided by 0');
 });
 
 
